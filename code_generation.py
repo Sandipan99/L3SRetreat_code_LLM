@@ -3,7 +3,7 @@ from huggingface_hub import login
 
 
 m = "bigcode/starcoder"
-login(token='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')
+login(token='')
 tokenizer = AutoTokenizer.from_pretrained(m)
 model = AutoModelForCausalLM.from_pretrained(m, device_map='auto')
 
